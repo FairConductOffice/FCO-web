@@ -7,6 +7,7 @@ export function Footer() {
         backgroundColor: "#F3F2F1",
         borderTop: "1px solid #B1B4B6",
         marginTop: 40,
+        width: "100%",
       }}
     >
       <div className="container" style={{ padding: "30px 30px" }}>

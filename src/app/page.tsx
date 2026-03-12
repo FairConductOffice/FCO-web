@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Warning panel */}
-      <div style={{ backgroundColor: "#F3F2F1" }}>
+      <div style={{ backgroundColor: "#F3F2F1", width: "100%" }}>
         <div className="container" style={{ padding: "40px 30px" }}>
           <div className="warning-panel">
             <div className="warning-icon">!</div>

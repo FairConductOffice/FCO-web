@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -11,10 +12,12 @@ const NAV_ITEMS = [
 ];
 
 export function Header() {
+  const [showBanner, setShowBanner] = useState(true);
+
   return (
     <>
       {/* Top band */}
-      <div style={{ backgroundColor: "#0B0C10", padding: "8px 0" }}>
+      <div style={{ backgroundColor: "#0B0C10", padding: "8px 0", width: "100%" }}>
         <div className="container">
           <span style={{ color: "#B1B4B6", fontSize: 14, letterSpacing: "0.05em" }}>
             conductoffice.co.uk
@@ -23,7 +26,7 @@ export function Header() {
       </div>
 
       {/* Header */}
-      <header style={{ backgroundColor: "#1A1A2E", borderBottom: "4px solid #D4351C" }}>
+      <header style={{ backgroundColor: "#1A1A2E", borderBottom: "4px solid #D4351C", width: "100%" }}>
         <div
           className="container"
           style={{
@@ -81,15 +84,37 @@ export function Header() {
         </div>
       </header>
 
-      {/* Phase banner */}
-      <div style={{ backgroundColor: "#F3F2F1", borderBottom: "1px solid #B1B4B6" }}>
-        <div className="container" style={{ padding: "10px 30px" }}>
-          <span className="phase-tag">Advisory</span>
-          <span style={{ fontSize: 14, color: "#505A5F" }}>
-            Regulatory intelligence and compliance risk advisory for UK businesses.
-          </span>
+      {/* Closable disclaimer banner */}
+      {showBanner && (
+        <div style={{ backgroundColor: "#F3F2F1", borderBottom: "1px solid #B1B4B6", width: "100%" }}>
+          <div className="container" style={{ padding: "10px 30px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 16 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <span className="phase-tag">Disclosure</span>
+              <span style={{ fontSize: 14, color: "#505A5F" }}>
+                Where serious regulatory risk is identified, The Conduct Office works directly with the relevant authorities to ensure compliance obligations are met.
+              </span>
+            </div>
+            <button
+              onClick={() => setShowBanner(false)}
+              aria-label="Dismiss banner"
+              style={{
+                background: "none",
+                border: "none",
+                color: "#505A5F",
+                fontSize: 20,
+                fontWeight: 700,
+                padding: "2px 8px",
+                cursor: "pointer",
+                fontFamily: "Arial, sans-serif",
+                lineHeight: 1,
+                flexShrink: 0,
+              }}
+            >
+              ×
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }
