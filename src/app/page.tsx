@@ -16,11 +16,6 @@ const SERVICES = [
     tag: "Engagement",
     desc: "Prioritised action plan with policy templates and implementation timelines. From identified gaps to documented compliance.",
   },
-  {
-    title: "Retained Advisory",
-    tag: "Ongoing",
-    desc: "Continuous compliance monitoring and regulatory change briefings. For businesses that require standing oversight.",
-  },
 ];
 
 const SECTORS = [
@@ -83,10 +78,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Divider */}
-      <div className="container">
-        <hr className="divider" />
-      </div>
+      <div className="container"><hr className="divider" /></div>
 
       {/* What we do */}
       <section id="what-we-do" className="container" style={{ padding: "50px 30px" }}>
@@ -94,19 +86,11 @@ export default function Home() {
         <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
           Compliance risk identification and remediation
         </h2>
-        <p
-          style={{
-            fontSize: 18,
-            color: "#505A5F",
-            maxWidth: 580,
-            marginBottom: 40,
-            lineHeight: 1.7,
-          }}
-        >
+        <p style={{ fontSize: 18, color: "#505A5F", maxWidth: 580, marginBottom: 40, lineHeight: 1.7 }}>
           We review your business against the regulations that apply to your sector. Where we find gaps, we document them, score them by severity, and provide a structured path to close them.
         </p>
 
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 20 }}>
           {SERVICES.map((s) => (
             <div key={s.title} className="summary-card">
               <div className="summary-card-header">
@@ -121,10 +105,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="container">
-        <hr className="divider" />
-      </div>
+      <div className="container"><hr className="divider" /></div>
 
       {/* Who we help */}
       <section id="who-we-help" className="container" style={{ padding: "50px 30px" }}>
@@ -145,9 +126,7 @@ export default function Home() {
               }}
             >
               <p style={{ fontSize: 16, fontWeight: 700 }}>{s.sector}</p>
-              <p style={{ marginTop: 4, fontSize: 14, color: "#505A5F" }}>
-                {s.regs}
-              </p>
+              <p style={{ marginTop: 4, fontSize: 14, color: "#505A5F" }}>{s.regs}</p>
             </div>
           ))}
         </div>
@@ -162,14 +141,7 @@ export default function Home() {
               <p style={{ fontSize: 18, fontWeight: 700 }}>
                 Regulatory enforcement has intensified.
               </p>
-              <p
-                style={{
-                  marginTop: 8,
-                  fontSize: 16,
-                  color: "#505A5F",
-                  lineHeight: 1.6,
-                }}
-              >
+              <p style={{ marginTop: 8, fontSize: 16, color: "#505A5F", lineHeight: 1.6 }}>
                 The Digital Markets, Competition and Consumers Act 2024 introduced personal liability for directors. The FCA, ICO, HMRC, and CMA are all increasing enforcement activity. Non-compliance carries material consequences.
               </p>
             </div>
@@ -183,46 +155,15 @@ export default function Home() {
         <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, lineHeight: 1.2 }}>
           Process
         </h2>
-
         <ol style={{ listStyle: "none", padding: 0 }}>
           {STEPS.map((step, i) => (
-            <li
-              key={i}
-              style={{
-                display: "flex",
-                gap: 24,
-                marginBottom: 32,
-                alignItems: "flex-start",
-              }}
-            >
-              <div
-                style={{
-                  minWidth: 48,
-                  height: 48,
-                  backgroundColor: "#1A1A2E",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexShrink: 0,
-                }}
-              >
-                <span style={{ color: "#FFFFFF", fontWeight: 700, fontSize: 22 }}>
-                  {i + 1}
-                </span>
+            <li key={i} style={{ display: "flex", gap: 24, marginBottom: 32, alignItems: "flex-start" }}>
+              <div style={{ minWidth: 48, height: 48, backgroundColor: "#1A1A2E", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                <span style={{ color: "#FFFFFF", fontWeight: 700, fontSize: 22 }}>{i + 1}</span>
               </div>
-              <div
-                style={{
-                  borderBottom: "1px solid #B1B4B6",
-                  paddingBottom: 32,
-                  flexGrow: 1,
-                }}
-              >
-                <h3 style={{ marginTop: 4, marginBottom: 8, fontSize: 20, fontWeight: 700 }}>
-                  {step.title}
-                </h3>
-                <p style={{ fontSize: 16, color: "#505A5F", lineHeight: 1.7 }}>
-                  {step.desc}
-                </p>
+              <div style={{ borderBottom: "1px solid #B1B4B6", paddingBottom: 32, flexGrow: 1 }}>
+                <h3 style={{ marginTop: 4, marginBottom: 8, fontSize: 20, fontWeight: 700 }}>{step.title}</h3>
+                <p style={{ fontSize: 16, color: "#505A5F", lineHeight: 1.7 }}>{step.desc}</p>
               </div>
             </li>
           ))}
@@ -238,106 +179,71 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Divider */}
-      <div className="container">
-        <hr className="divider" />
-      </div>
+      <div className="container"><hr className="divider" /></div>
 
-      {/* Contact */}
-      <section id="contact" className="container" style={{ padding: "50px 30px" }}>
-        <span className="section-label">Contact</span>
-        <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
-          Get in touch
-        </h2>
-        <p
-          style={{
-            fontSize: 18,
-            color: "#505A5F",
-            maxWidth: 500,
-            marginBottom: 32,
-            lineHeight: 1.7,
-          }}
-        >
-          To request a risk assessment or discuss how we can help your business, contact us directly.
-        </p>
+      {/* Contact + Report side by side */}
+      <section className="container" style={{ padding: "50px 30px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "start" }}>
 
-        <div style={{ maxWidth: 460 }}>
-          <div className="form-group">
-            <label className="form-label">Full name</label>
-            <input type="text" className="form-input" />
+          {/* Contact */}
+          <div id="contact">
+            <span className="section-label">Contact</span>
+            <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
+              Get in touch
+            </h2>
+            <p style={{ fontSize: 16, color: "#505A5F", marginBottom: 28, lineHeight: 1.7 }}>
+              To request a risk assessment or discuss how we can help your business, contact us directly.
+            </p>
+            <div>
+              <div className="form-group">
+                <label className="form-label">Full name</label>
+                <input type="text" className="form-input" />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Company name</label>
+                <input type="text" className="form-input" />
+              </div>
+              <div className="form-group" style={{ marginBottom: 24 }}>
+                <label className="form-label">How can we help?</label>
+                <textarea rows={4} className="form-textarea" />
+              </div>
+              <button type="button" className="btn-secondary">
+                Send message
+              </button>
+            </div>
           </div>
-          <div className="form-group">
-            <label className="form-label">Email address</label>
-            <input type="email" className="form-input" />
-          </div>
-          <div className="form-group">
-            <label className="form-label">Company name</label>
-            <input type="text" className="form-input" />
-          </div>
-          <div className="form-group" style={{ marginBottom: 24 }}>
-            <label className="form-label">How can we help?</label>
-            <textarea rows={4} className="form-textarea" />
-          </div>
-          <button type="button" className="btn-secondary">
-            Send message
-          </button>
-        </div>
-      </section>
 
-      {/* Divider */}
-      <div className="container">
-        <hr className="divider" />
-      </div>
+          {/* Report */}
+          <div id="report">
+            <span className="section-label">Report</span>
+            <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
+              Report a company
+            </h2>
+            <p style={{ fontSize: 16, color: "#505A5F", marginBottom: 12, lineHeight: 1.7 }}>
+              If you believe a UK business is operating in breach of its regulatory obligations, you can report it to us anonymously.
+            </p>
+            <p style={{ fontSize: 14, color: "#505A5F", marginBottom: 28, lineHeight: 1.7 }}>
+              All reports are treated in confidence. You are not required to identify yourself.
+            </p>
+            <div>
+              <div className="form-group">
+                <label className="form-label">Company name or website</label>
+                <input type="text" className="form-input" />
+              </div>
+              <div className="form-group">
+                <label className="form-label">Sector (if known)</label>
+                <input type="text" className="form-input" placeholder="e.g. Estate agency, financial advice, e-commerce" style={{ fontSize: 15 }} />
+              </div>
+              <div className="form-group" style={{ marginBottom: 24 }}>
+                <label className="form-label">What concerns do you have?</label>
+                <textarea rows={4} className="form-textarea" placeholder="Describe the regulatory concern." style={{ fontSize: 15 }} />
+              </div>
+              <button type="button" className="btn-secondary">
+                Submit report
+              </button>
+            </div>
+          </div>
 
-      {/* Report a company */}
-      <section id="report" className="container" style={{ padding: "50px 30px" }}>
-        <span className="section-label">Report</span>
-        <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
-          Report a company
-        </h2>
-        <p
-          style={{
-            fontSize: 18,
-            color: "#505A5F",
-            maxWidth: 540,
-            marginBottom: 12,
-            lineHeight: 1.7,
-          }}
-        >
-          If you believe a UK business is operating in breach of its regulatory obligations, you can report it to us anonymously. We will review the information provided and, where appropriate, conduct an independent assessment.
-        </p>
-        <p
-          style={{
-            fontSize: 15,
-            color: "#505A5F",
-            maxWidth: 540,
-            marginBottom: 32,
-            lineHeight: 1.7,
-          }}
-        >
-          All reports are treated in confidence. You are not required to provide your name or contact details.
-        </p>
-
-        <div style={{ maxWidth: 460 }}>
-          <div className="form-group">
-            <label className="form-label">Company name or website</label>
-            <input type="text" className="form-input" />
-          </div>
-          <div className="form-group">
-            <label className="form-label">Sector (if known)</label>
-            <input type="text" className="form-input" placeholder="e.g. Estate agency, financial advice, e-commerce" style={{ fontSize: 15 }} />
-          </div>
-          <div className="form-group" style={{ marginBottom: 24 }}>
-            <label className="form-label">What concerns do you have?</label>
-            <textarea rows={4} className="form-textarea" placeholder="Describe the regulatory concern. Be as specific as possible." style={{ fontSize: 15 }} />
-          </div>
-          <div className="form-group">
-            <label className="form-label">Your email (optional)</label>
-            <input type="email" className="form-input" placeholder="Only if you wish to be contacted about this report" style={{ fontSize: 15 }} />
-          </div>
-          <button type="button" className="btn-secondary" style={{ marginTop: 4 }}>
-            Submit report
-          </button>
         </div>
       </section>
     </>

@@ -45,7 +45,7 @@ a:hover {
 
 .container {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0;
   padding-left: var(--side-padding);
   padding-right: var(--side-padding);
 }
@@ -217,14 +217,13 @@ a:hover {
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
-  .service-grid {
-    grid-template-columns: 1fr;
-  }
-  .sector-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
   .warning-panel {
     flex-direction: column;
     gap: 12px;
