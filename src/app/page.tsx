@@ -57,9 +57,9 @@ export default function Home() {
               letterSpacing: "-0.02em",
             }}
           >
-            We identify regulatory gaps
+            Check whether your business
             <br />
-            before regulators do.
+            meets its regulatory obligations.
           </h1>
           <p
             style={{
@@ -70,7 +70,7 @@ export default function Home() {
               maxWidth: 540,
             }}
           >
-            Independent compliance risk assessments for UK businesses.
+            Most UK businesses in regulated sectors have compliance obligations they are not fully meeting. The Fair Conduct Office conducts independent reviews against the frameworks that apply to your sector and identifies where those obligations are not being met.
           </p>
           <Link href="#contact" className="btn-primary">
             Request a risk assessment
