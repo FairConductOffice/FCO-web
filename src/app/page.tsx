@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ReportForm } from "@/components/ReportForm";
 
 const SERVICES = [
   {
@@ -215,23 +216,7 @@ export default function Home() {
             <p style={{ fontSize: 14, color: "#505A5F", marginBottom: 28, lineHeight: 1.7 }}>
               All reports are treated in confidence. You are not required to identify yourself.
             </p>
-            <div>
-              <div className="form-group">
-                <label className="form-label">Company name or website</label>
-                <input type="text" className="form-input" />
-              </div>
-              <div className="form-group">
-                <label className="form-label">Sector (if known)</label>
-                <input type="text" className="form-input" placeholder="e.g. Estate agency, financial advice, e-commerce" style={{ fontSize: 15 }} />
-              </div>
-              <div className="form-group" style={{ marginBottom: 24 }}>
-                <label className="form-label">What concerns do you have?</label>
-                <textarea rows={4} className="form-textarea" placeholder="Describe the regulatory concern." style={{ fontSize: 15 }} />
-              </div>
-              <button type="button" className="btn-secondary">
-                Submit report
-              </button>
-            </div>
+            <ReportForm />
           </div>
 
         </div>
