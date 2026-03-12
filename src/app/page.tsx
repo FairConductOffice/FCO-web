@@ -47,7 +47,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <div className="container" style={{ paddingTop: 60, paddingBottom: 50 }}>
-        <div>
+        <div style={{ maxWidth: "66%" }}>
           <h1
             style={{
               fontSize: 48,
@@ -85,7 +85,7 @@ export default function Home() {
         <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
           Compliance risk identification and remediation
         </h2>
-        <p style={{ fontSize: 18, color: "#505A5F", marginBottom: 40, lineHeight: 1.7 }}>
+        <p style={{ fontSize: 18, color: "#505A5F", maxWidth: "66%", marginBottom: 40, lineHeight: 1.7 }}>
           We review your business against the regulations that apply to your sector. Where we find gaps, we document them, score them by severity, and provide a structured path to close them.
         </p>
 
