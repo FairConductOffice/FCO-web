@@ -10,7 +10,7 @@ export function Footer() {
         width: "100%",
       }}
     >
-      <div className="container" style={{ padding: "30px 30px" }}>
+      <div className="container" style={{ paddingTop: 30, paddingBottom: 30 }}>
         <div
           style={{
             display: "flex",

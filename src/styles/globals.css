@@ -44,10 +44,10 @@ a:hover {
 }
 
 .container {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 /* GOV.UK-style divider */
@@ -217,11 +217,6 @@ a:hover {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-  .container {
-    max-width: 100%;
-  }
-}
 
 @media (max-width: 768px) {
   .warning-panel {

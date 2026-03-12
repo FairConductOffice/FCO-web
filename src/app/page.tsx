@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <div className="container" style={{ padding: "60px 30px 50px" }}>
+      <div className="container" style={{ paddingTop: 60, paddingBottom: 50 }}>
         <div style={{ maxWidth: 620 }}>
           <h1
             style={{
@@ -81,7 +81,7 @@ export default function Home() {
       <div className="container"><hr className="divider" /></div>
 
       {/* What we do */}
-      <section id="what-we-do" className="container" style={{ padding: "50px 30px" }}>
+      <section id="what-we-do" className="container" style={{ paddingTop: 50, paddingBottom: 50 }}>
         <span className="section-label">What we do</span>
         <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
           Compliance risk identification and remediation
@@ -108,7 +108,7 @@ export default function Home() {
       <div className="container"><hr className="divider" /></div>
 
       {/* Who we help */}
-      <section id="who-we-help" className="container" style={{ padding: "50px 30px" }}>
+      <section id="who-we-help" className="container" style={{ paddingTop: 50, paddingBottom: 50 }}>
         <span className="section-label">Who we help</span>
         <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
           UK businesses in regulated sectors
@@ -134,7 +134,7 @@ export default function Home() {
 
       {/* Warning panel */}
       <div style={{ backgroundColor: "#F3F2F1", width: "100%" }}>
-        <div className="container" style={{ padding: "40px 30px" }}>
+        <div className="container" style={{ paddingTop: 40, paddingBottom: 40 }}>
           <div className="warning-panel">
             <div className="warning-icon">!</div>
             <div>
@@ -150,7 +150,7 @@ export default function Home() {
       </div>
 
       {/* How it works */}
-      <section id="how-it-works" className="container" style={{ padding: "50px 30px" }}>
+      <section id="how-it-works" className="container" style={{ paddingTop: 50, paddingBottom: 50 }}>
         <span className="section-label">How it works</span>
         <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 32, lineHeight: 1.2 }}>
           Process
@@ -182,7 +182,7 @@ export default function Home() {
       <div className="container"><hr className="divider" /></div>
 
       {/* Contact + Report side by side */}
-      <section className="container" style={{ padding: "50px 30px" }}>
+      <section className="container" style={{ paddingTop: 50, paddingBottom: 50 }}>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 60, alignItems: "start" }}>
 
           {/* Contact */}

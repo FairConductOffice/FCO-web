@@ -21,7 +21,8 @@ export function Header() {
         <div
           className="container"
           style={{
-            padding: "16px 30px",
+            paddingTop: 16,
+            paddingBottom: 16,
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -78,11 +79,11 @@ export function Header() {
       {/* Closable disclaimer banner */}
       {showBanner && (
         <div style={{ backgroundColor: "#F3F2F1", borderBottom: "1px solid #B1B4B6", width: "100%" }}>
-          <div className="container" style={{ padding: "10px 30px", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 16 }}>
+          <div className="container" style={{ paddingTop: 10, paddingBottom: 10, display: "flex", justifyContent: "space-between", alignItems: "center", gap: 16 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               <span className="phase-tag">Disclosure</span>
               <span style={{ fontSize: 14, color: "#505A5F" }}>
-                Where serious regulatory risk is identified, the Fair Conduct Office works directly with the relevant authorities to ensure compliance obligations are met.
+                Where serious regulatory risk is identified, the Fair Conduct Office may refer findings to the appropriate regulatory authority in accordance with its responsible disclosure policy.
               </span>
             </div>
             <button
