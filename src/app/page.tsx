@@ -47,7 +47,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <div className="container" style={{ paddingTop: 60, paddingBottom: 50 }}>
-        <div style={{ maxWidth: 620 }}>
+        <div style={{ maxWidth: 900 }}>
           <h1
             style={{
               fontSize: 48,
@@ -67,7 +67,7 @@ export default function Home() {
               color: "#505A5F",
               marginBottom: 32,
               lineHeight: 1.6,
-              maxWidth: 540,
+              maxWidth: 720,
             }}
           >
             Most UK businesses in regulated sectors have compliance obligations they are not fully meeting. The Fair Conduct Office conducts independent reviews against the frameworks that apply to your sector and identifies where those obligations are not being met.
@@ -86,7 +86,7 @@ export default function Home() {
         <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
           Compliance risk identification and remediation
         </h2>
-        <p style={{ fontSize: 18, color: "#505A5F", maxWidth: 580, marginBottom: 40, lineHeight: 1.7 }}>
+        <p style={{ fontSize: 18, color: "#505A5F", maxWidth: 720, marginBottom: 40, lineHeight: 1.7 }}>
           We review your business against the regulations that apply to your sector. Where we find gaps, we document them, score them by severity, and provide a structured path to close them.
         </p>
 
