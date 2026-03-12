@@ -25,7 +25,7 @@ export function Footer() {
             <p style={{ fontSize: 14, color: "#505A5F", lineHeight: 1.7 }}>
               Regulatory intelligence and compliance risk advisory.
               <br />
-              aren@conductoffice.co.uk
+              remediation@fairconductoffice.co.uk
             </p>
           </div>
           <div style={{ textAlign: "right" }}>

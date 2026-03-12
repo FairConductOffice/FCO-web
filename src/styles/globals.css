@@ -44,10 +44,10 @@ a:hover {
 }
 
 .container {
-  max-width: var(--max-width);
-  margin: 0;
-  padding-left: var(--side-padding);
-  padding-right: var(--side-padding);
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 /* GOV.UK-style divider */

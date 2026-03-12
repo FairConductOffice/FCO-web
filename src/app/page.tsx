@@ -194,23 +194,14 @@ export default function Home() {
             <p style={{ fontSize: 16, color: "#505A5F", marginBottom: 28, lineHeight: 1.7 }}>
               To request a risk assessment or discuss how we can help your business, contact us directly.
             </p>
-            <div>
-              <div className="form-group">
-                <label className="form-label">Full name</label>
-                <input type="text" className="form-input" />
-              </div>
-              <div className="form-group">
-                <label className="form-label">Company name</label>
-                <input type="text" className="form-input" />
-              </div>
-              <div className="form-group" style={{ marginBottom: 24 }}>
-                <label className="form-label">How can we help?</label>
-                <textarea rows={4} className="form-textarea" />
-              </div>
-              <button type="button" className="btn-secondary">
-                Send message
-              </button>
-            </div>
+            <p style={{ fontSize: 18, fontWeight: 700, marginBottom: 12 }}>
+              <a href="mailto:remediation@fairconductoffice.co.uk" style={{ color: "#1B3A5C" }}>
+                remediation@fairconductoffice.co.uk
+              </a>
+            </p>
+            <p style={{ fontSize: 15, color: "#505A5F", lineHeight: 1.7 }}>
+              Include your company name and a brief description of what you need. We will respond within two working days.
+            </p>
           </div>
 
           {/* Report */}
