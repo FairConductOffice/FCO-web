@@ -30,17 +30,8 @@ export function Footer() {
             </p>
           </div>
           <div style={{ textAlign: "right" }}>
-            <Link href="/privacy-policy" style={{ fontSize: 14, color: "#1B3A5C", display: "block", marginBottom: 6 }}>
-              Privacy policy
-            </Link>
-            <Link href="/terms" style={{ fontSize: 14, color: "#1B3A5C", display: "block", marginBottom: 6 }}>
+            <Link href="/terms" style={{ fontSize: 14, color: "#1B3A5C", display: "block" }}>
               Terms of engagement
-            </Link>
-            <Link href="/responsible-disclosure" style={{ fontSize: 14, color: "#1B3A5C", display: "block", marginBottom: 6 }}>
-              Responsible disclosure
-            </Link>
-            <Link href="/#report" style={{ fontSize: 14, color: "#1B3A5C", display: "block" }}>
-              Report a company
             </Link>
           </div>
         </div>
