@@ -4,12 +4,12 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "The Conduct Office — Regulatory & Digital Risk Advisory",
+  title: "Fair Conduct Office — Regulatory & Digital Risk Advisory",
   description:
     "Independent compliance risk assessments and digital security audits for UK businesses. We identify regulatory gaps before regulators do.",
   metadataBase: new URL("https://conductoffice.co.uk"),
   openGraph: {
-    title: "The Conduct Office",
+    title: "Fair Conduct Office",
     description:
       "Regulatory intelligence and compliance risk advisory for UK businesses.",
     type: "website",

@@ -16,15 +16,6 @@ export function Header() {
 
   return (
     <>
-      {/* Top band */}
-      <div style={{ backgroundColor: "#0B0C10", padding: "8px 0", width: "100%" }}>
-        <div className="container">
-          <span style={{ color: "#B1B4B6", fontSize: 14, letterSpacing: "0.05em" }}>
-            conductoffice.co.uk
-          </span>
-        </div>
-      </div>
-
       {/* Header */}
       <header style={{ backgroundColor: "#1A1A2E", borderBottom: "4px solid #D4351C", width: "100%" }}>
         <div
@@ -60,7 +51,7 @@ export function Header() {
                 letterSpacing: "-0.01em",
               }}
             >
-              The Conduct Office
+              Fair Conduct Office
             </span>
           </Link>
 
@@ -91,7 +82,7 @@ export function Header() {
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               <span className="phase-tag">Disclosure</span>
               <span style={{ fontSize: 14, color: "#505A5F" }}>
-                Where serious regulatory risk is identified, The Conduct Office works directly with the relevant authorities to ensure compliance obligations are met.
+                Where serious regulatory risk is identified, the Fair Conduct Office works directly with the relevant authorities to ensure compliance obligations are met.
               </span>
             </div>
             <button

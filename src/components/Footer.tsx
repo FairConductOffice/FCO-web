@@ -21,7 +21,7 @@ export function Footer() {
         >
           <div>
             <p style={{ marginBottom: 12, fontSize: 16, fontWeight: 700 }}>
-              The Conduct Office
+              Fair Conduct Office
             </p>
             <p style={{ fontSize: 14, color: "#505A5F", lineHeight: 1.7 }}>
               Regulatory intelligence and compliance risk advisory.
@@ -46,7 +46,7 @@ export function Footer() {
         </div>
         <hr className="divider" style={{ marginBottom: 16 }} />
         <p style={{ fontSize: 13, color: "#B1B4B6" }}>
-          This service does not constitute legal advice. The Conduct Office is a
+          This service does not constitute legal advice. The Fair Conduct Office is a
           trading name. We recommend consulting a qualified solicitor for legal
           interpretation and formal compliance sign-off.
         </p>
