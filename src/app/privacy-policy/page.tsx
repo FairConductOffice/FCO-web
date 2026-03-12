@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Privacy Policy — The Conduct Office",
+  title: "Privacy Policy",
 };
 
 export default function PrivacyPolicy() {
@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
 
       <div style={{ maxWidth: 680 }}>
         <p style={{ fontSize: 16, color: "#505A5F", lineHeight: 1.7, marginBottom: 24 }}>
-          The Conduct Office is committed to protecting your personal data. This
+          The Fair Conduct Office is committed to protecting your personal data. This
           policy explains what data we collect, how we use it, and your rights
           under UK GDPR and the Data Protection Act 2018.
         </p>
@@ -21,9 +21,9 @@ export default function PrivacyPolicy() {
           Data controller
         </h2>
         <p style={{ fontSize: 16, color: "#505A5F", lineHeight: 1.7, marginBottom: 24 }}>
-          The Conduct Office (trading name), operated by Aren Webb, is the data
-          controller for personal data collected through this website and in the
-          course of providing our services. Contact: aren@conductoffice.co.uk.
+          The Fair Conduct Office (trading name), operated by Aren Webb, is the
+          data controller for personal data collected through this website and in the
+          course of providing our services. Contact: remediation@fairconductoffice.co.uk.
         </p>
 
         <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 12, marginTop: 32 }}>
@@ -65,7 +65,7 @@ export default function PrivacyPolicy() {
           or object to the processing of your personal data. You also have the
           right to data portability and to lodge a complaint with the Information
           Commissioner's Office (ICO). To exercise any of these rights, contact
-          aren@conductoffice.co.uk.
+          remediation@fairconductoffice.co.uk.
         </p>
 
         <p style={{ fontSize: 14, color: "#B1B4B6", marginTop: 40 }}>

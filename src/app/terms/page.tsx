@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Terms of Engagement — The Conduct Office",
+  title: "Terms of Engagement",
 };
 
 export default function Terms() {
@@ -12,8 +12,8 @@ export default function Terms() {
 
       <div style={{ maxWidth: 680 }}>
         <p style={{ fontSize: 16, color: "#505A5F", lineHeight: 1.7, marginBottom: 24 }}>
-          These terms govern all engagements between The Conduct Office and its
-          clients. By signing an engagement contract, you agree to the terms set
+          These terms govern all engagements between the Fair Conduct Office
+          and its clients. By signing an engagement contract, you agree to the terms set
           out below.
         </p>
 
@@ -21,8 +21,8 @@ export default function Terms() {
           Scope of services
         </h2>
         <p style={{ fontSize: 16, color: "#505A5F", lineHeight: 1.7, marginBottom: 24 }}>
-          The Conduct Office provides regulatory compliance risk assessments and
-          digital security audits based on publicly available information. The
+          The Fair Conduct Office provides regulatory compliance risk
+          assessments and digital security audits based on publicly available information. The
           specific scope of each engagement is defined in the signed engagement
           contract.
         </p>
@@ -70,8 +70,8 @@ export default function Terms() {
           Responsible disclosure
         </h2>
         <p style={{ fontSize: 16, color: "#505A5F", lineHeight: 1.7, marginBottom: 24 }}>
-          The Conduct Office operates a responsible disclosure policy. Full
-          details are available on our{" "}
+          The Fair Conduct Office operates a responsible disclosure policy.
+          Full details are available on our{" "}
           <a href="/responsible-disclosure" style={{ color: "#1B3A5C" }}>
             responsible disclosure page
           </a>

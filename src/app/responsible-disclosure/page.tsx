@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Responsible Disclosure — The Conduct Office",
+  title: "Responsible Disclosure",
 };
 
 export default function ResponsibleDisclosure() {
@@ -12,8 +12,8 @@ export default function ResponsibleDisclosure() {
 
       <div style={{ maxWidth: 680 }}>
         <p style={{ fontSize: 16, color: "#505A5F", lineHeight: 1.7, marginBottom: 24 }}>
-          The Conduct Office operates a responsible disclosure policy. This
-          policy applies to compliance gaps and digital security vulnerabilities
+          The Fair Conduct Office operates a responsible disclosure policy.
+          This policy applies to compliance gaps and digital security vulnerabilities
           identified during the course of our assessment work.
         </p>
 
