@@ -11,8 +11,6 @@
   --dark-grey: #505A5F;
   --text: #0B0C10;
   --border: #B1B4B6;
-  --green: #00703C;
-  --green-shadow: #003618;
   --section-border: #1D70B8;
   --max-width: 960px;
   --side-padding: 30px;
@@ -131,21 +129,22 @@ a:hover {
   text-decoration: none;
 }
 
-.btn-green {
+/* Secondary button - dark navy palette */
+.btn-secondary {
   display: inline-block;
-  background-color: var(--green);
+  background-color: var(--dark-navy);
   color: var(--white);
   font-size: 18px;
   font-weight: 700;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 3px 0 var(--green-shadow);
+  box-shadow: 0 3px 0 var(--navy);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn-green:hover {
-  background-color: #005a30;
+.btn-secondary:hover {
+  background-color: #12132a;
 }
 
 /* Form elements */
@@ -215,4 +214,19 @@ a:hover {
   font-size: 15px;
   color: var(--dark-grey);
   line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .sector-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .warning-panel {
+    flex-direction: column;
+    gap: 12px;
+  }
 }

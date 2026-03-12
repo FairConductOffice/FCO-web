@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV_ITEMS = [
   { label: "What we do", href: "/#what-we-do" },
@@ -13,32 +14,16 @@ export function Header() {
   return (
     <>
       {/* Top band */}
-      <div
-        style={{
-          backgroundColor: "#0B0C10",
-          padding: "8px 0",
-        }}
-      >
+      <div style={{ backgroundColor: "#0B0C10", padding: "8px 0" }}>
         <div className="container">
-          <span
-            style={{
-              color: "#B1B4B6",
-              fontSize: 14,
-              letterSpacing: "0.05em",
-            }}
-          >
+          <span style={{ color: "#B1B4B6", fontSize: 14, letterSpacing: "0.05em" }}>
             conductoffice.co.uk
           </span>
         </div>
       </div>
 
       {/* Header */}
-      <header
-        style={{
-          backgroundColor: "#1A1A2E",
-          borderBottom: "4px solid #D4351C",
-        }}
-      >
+      <header style={{ backgroundColor: "#1A1A2E", borderBottom: "4px solid #D4351C" }}>
         <div
           className="container"
           style={{
@@ -57,27 +42,13 @@ export function Header() {
               textDecoration: "none",
             }}
           >
-            <div
-              style={{
-                width: 36,
-                height: 36,
-                backgroundColor: "#D4351C",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <span
-                style={{
-                  color: "#FFFFFF",
-                  fontWeight: 700,
-                  fontSize: 20,
-                  lineHeight: 1,
-                }}
-              >
-                CO
-              </span>
-            </div>
+            <Image
+              src="/FCO_LOGO.png"
+              alt="FCO"
+              width={36}
+              height={36}
+              style={{ display: "block" }}
+            />
             <span
               style={{
                 color: "#FFFFFF",
@@ -111,17 +82,11 @@ export function Header() {
       </header>
 
       {/* Phase banner */}
-      <div
-        style={{
-          backgroundColor: "#F3F2F1",
-          borderBottom: "1px solid #B1B4B6",
-        }}
-      >
+      <div style={{ backgroundColor: "#F3F2F1", borderBottom: "1px solid #B1B4B6" }}>
         <div className="container" style={{ padding: "10px 30px" }}>
           <span className="phase-tag">Advisory</span>
           <span style={{ fontSize: 14, color: "#505A5F" }}>
-            Regulatory intelligence and compliance risk advisory for UK
-            businesses.
+            Regulatory intelligence and compliance risk advisory for UK businesses.
           </span>
         </div>
       </div>

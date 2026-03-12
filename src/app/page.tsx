@@ -3,23 +3,23 @@ import Link from "next/link";
 const SERVICES = [
   {
     title: "Risk Snapshot",
-    tag: "Free",
-    desc: "A summary of the most visible compliance gaps in your business, with the relevant regulations cited and penalty ranges referenced. Designed to give you clarity on where you stand.",
+    tag: "Complimentary",
+    desc: "A preliminary review of your most visible compliance exposures. Regulations cited. Severity indicated.",
   },
   {
     title: "Full Risk Assessment",
-    tag: "£500 – £1,200",
-    desc: "Comprehensive gap analysis across all applicable regulations. Every finding is risk-scored by likelihood and impact, with specific regulatory citations and evidence.",
+    tag: "Engagement",
+    desc: "Comprehensive gap analysis across all applicable regulatory frameworks. Every finding scored, cited, and evidenced.",
   },
   {
     title: "Remediation Plan",
-    tag: "£800 – £2,000",
-    desc: "A prioritised action plan with policy templates, implementation timelines, and draft procedures. Takes you from identified gaps to documented compliance.",
+    tag: "Engagement",
+    desc: "Prioritised action plan with policy templates and implementation timelines. From identified gaps to documented compliance.",
   },
   {
     title: "Retained Advisory",
-    tag: "£300 – £800/mo",
-    desc: "Ongoing compliance monitoring, regulatory change briefings, and ad-hoc gap checks. For businesses that want continuous oversight.",
+    tag: "Ongoing",
+    desc: "Continuous compliance monitoring and regulatory change briefings. For businesses that require standing oversight.",
   },
 ];
 
@@ -35,15 +35,15 @@ const SECTORS = [
 const STEPS = [
   {
     title: "We research your business",
-    desc: "We conduct an independent review of your publicly available information — website, terms, privacy policy, regulatory register entries, and Companies House filings — against the regulatory frameworks applicable to your sector.",
+    desc: "An independent review of your publicly available information against the regulatory frameworks applicable to your sector.",
   },
   {
     title: "We present our findings",
-    desc: "You receive a risk snapshot summarising the most significant compliance gaps identified, with the relevant regulations cited and the associated penalty ranges referenced.",
+    desc: "You receive a risk snapshot summarising the most significant gaps identified, with the relevant regulations cited.",
   },
   {
-    title: "You decide what to do",
-    desc: "If you want full visibility, we conduct a comprehensive risk assessment. If you want to fix the gaps, we provide a prioritised remediation plan with templates and timelines. If you have a solicitor or compliance team, you can take our findings to them directly.",
+    title: "You decide what happens next",
+    desc: "Full assessment, remediation plan, or take our findings to your own solicitor. The choice is yours.",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <div className="container" style={{ padding: "60px 30px 50px" }}>
-        <div style={{ maxWidth: 680 }}>
+        <div style={{ maxWidth: 620 }}>
           <h1
             style={{
               fontSize: 48,
@@ -72,12 +72,10 @@ export default function Home() {
               color: "#505A5F",
               marginBottom: 32,
               lineHeight: 1.6,
-              maxWidth: 580,
+              maxWidth: 540,
             }}
           >
-            The Conduct Office provides independent compliance risk assessments
-            for UK businesses. We surface what's wrong, quantify the exposure,
-            and give you a clear path to resolve it.
+            Independent compliance risk assessments for UK businesses.
           </p>
           <Link href="#contact" className="btn-primary">
             Request a risk assessment
@@ -100,14 +98,12 @@ export default function Home() {
           style={{
             fontSize: 18,
             color: "#505A5F",
-            maxWidth: 620,
+            maxWidth: 580,
             marginBottom: 40,
             lineHeight: 1.7,
           }}
         >
-          We review your business against the regulatory frameworks that apply
-          to your sector. Where we find gaps, we document them, score them by
-          severity, and provide a structured plan to close them.
+          We review your business against the regulations that apply to your sector. Where we find gaps, we document them, score them by severity, and provide a structured path to close them.
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
@@ -134,20 +130,8 @@ export default function Home() {
       <section id="who-we-help" className="container" style={{ padding: "50px 30px" }}>
         <span className="section-label">Who we help</span>
         <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
-          UK businesses in regulated and high-risk sectors
+          UK businesses in regulated sectors
         </h2>
-        <p
-          style={{
-            fontSize: 18,
-            color: "#505A5F",
-            maxWidth: 620,
-            marginBottom: 32,
-            lineHeight: 1.7,
-          }}
-        >
-          We work with SMEs that have compliance obligations but no dedicated
-          compliance function.
-        </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 0 }}>
           {SECTORS.map((s, i) => (
@@ -176,8 +160,7 @@ export default function Home() {
             <div className="warning-icon">!</div>
             <div>
               <p style={{ fontSize: 18, fontWeight: 700 }}>
-                Most businesses we assess have between 10 and 30 compliance gaps
-                they are unaware of.
+                Regulatory enforcement has intensified.
               </p>
               <p
                 style={{
@@ -187,12 +170,7 @@ export default function Home() {
                   lineHeight: 1.6,
                 }}
               >
-                Regulatory enforcement activity from the FCA, ICO, HMRC, and CMA
-                has increased significantly. The Digital Markets, Competition and
-                Consumers Act 2024 introduced new personal liability for
-                directors. Non-compliance is no longer a matter of administrative
-                inconvenience — it carries material financial and legal
-                consequences.
+                The Digital Markets, Competition and Consumers Act 2024 introduced personal liability for directors. The FCA, ICO, HMRC, and CMA are all increasing enforcement activity. Non-compliance carries material consequences.
               </p>
             </div>
           </div>
@@ -228,9 +206,7 @@ export default function Home() {
                   flexShrink: 0,
                 }}
               >
-                <span
-                  style={{ color: "#FFFFFF", fontWeight: 700, fontSize: 22 }}
-                >
+                <span style={{ color: "#FFFFFF", fontWeight: 700, fontSize: 22 }}>
                   {i + 1}
                 </span>
               </div>
@@ -257,12 +233,7 @@ export default function Home() {
       <div className="container" style={{ paddingBottom: 50 }}>
         <div className="inset-text">
           <p style={{ fontSize: 15, color: "#505A5F", lineHeight: 1.7 }}>
-            <strong>Responsible disclosure policy.</strong> The Conduct Office
-            operates a responsible disclosure policy. Where we identify
-            compliance gaps that pose a serious and ongoing risk of material
-            consumer harm, we may report relevant findings to the appropriate
-            regulatory body. This applies only to matters of critical severity
-            involving demonstrable risk to consumers or the public.
+            <strong>Responsible disclosure.</strong> Where we identify gaps posing serious and ongoing risk of material consumer harm, we may report findings to the appropriate regulatory body.
           </p>
         </div>
       </div>
@@ -282,13 +253,12 @@ export default function Home() {
           style={{
             fontSize: 18,
             color: "#505A5F",
-            maxWidth: 560,
+            maxWidth: 500,
             marginBottom: 32,
             lineHeight: 1.7,
           }}
         >
-          To request a risk assessment or discuss how we can help your business,
-          contact us directly.
+          To request a risk assessment or discuss how we can help your business, contact us directly.
         </p>
 
         <div style={{ maxWidth: 460 }}>
@@ -308,8 +278,65 @@ export default function Home() {
             <label className="form-label">How can we help?</label>
             <textarea rows={4} className="form-textarea" />
           </div>
-          <button type="button" className="btn-green">
+          <button type="button" className="btn-secondary">
             Send message
+          </button>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="container">
+        <hr className="divider" />
+      </div>
+
+      {/* Report a company */}
+      <section id="report" className="container" style={{ padding: "50px 30px" }}>
+        <span className="section-label">Report</span>
+        <h2 style={{ fontSize: 32, fontWeight: 700, marginBottom: 20, lineHeight: 1.2 }}>
+          Report a company
+        </h2>
+        <p
+          style={{
+            fontSize: 18,
+            color: "#505A5F",
+            maxWidth: 540,
+            marginBottom: 12,
+            lineHeight: 1.7,
+          }}
+        >
+          If you believe a UK business is operating in breach of its regulatory obligations, you can report it to us anonymously. We will review the information provided and, where appropriate, conduct an independent assessment.
+        </p>
+        <p
+          style={{
+            fontSize: 15,
+            color: "#505A5F",
+            maxWidth: 540,
+            marginBottom: 32,
+            lineHeight: 1.7,
+          }}
+        >
+          All reports are treated in confidence. You are not required to provide your name or contact details.
+        </p>
+
+        <div style={{ maxWidth: 460 }}>
+          <div className="form-group">
+            <label className="form-label">Company name or website</label>
+            <input type="text" className="form-input" />
+          </div>
+          <div className="form-group">
+            <label className="form-label">Sector (if known)</label>
+            <input type="text" className="form-input" placeholder="e.g. Estate agency, financial advice, e-commerce" style={{ fontSize: 15 }} />
+          </div>
+          <div className="form-group" style={{ marginBottom: 24 }}>
+            <label className="form-label">What concerns do you have?</label>
+            <textarea rows={4} className="form-textarea" placeholder="Describe the regulatory concern. Be as specific as possible." style={{ fontSize: 15 }} />
+          </div>
+          <div className="form-group">
+            <label className="form-label">Your email (optional)</label>
+            <input type="email" className="form-input" placeholder="Only if you wish to be contacted about this report" style={{ fontSize: 15 }} />
+          </div>
+          <button type="button" className="btn-secondary" style={{ marginTop: 4 }}>
+            Submit report
           </button>
         </div>
       </section>

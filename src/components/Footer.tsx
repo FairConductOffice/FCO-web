@@ -22,50 +22,24 @@ export function Footer() {
             <p style={{ marginBottom: 12, fontSize: 16, fontWeight: 700 }}>
               The Conduct Office
             </p>
-            <p
-              style={{
-                fontSize: 14,
-                color: "#505A5F",
-                lineHeight: 1.7,
-              }}
-            >
+            <p style={{ fontSize: 14, color: "#505A5F", lineHeight: 1.7 }}>
               Regulatory intelligence and compliance risk advisory.
               <br />
               aren@conductoffice.co.uk
             </p>
           </div>
           <div style={{ textAlign: "right" }}>
-            <Link
-              href="/privacy-policy"
-              style={{
-                fontSize: 14,
-                color: "#1B3A5C",
-                display: "block",
-                marginBottom: 6,
-              }}
-            >
+            <Link href="/privacy-policy" style={{ fontSize: 14, color: "#1B3A5C", display: "block", marginBottom: 6 }}>
               Privacy policy
             </Link>
-            <Link
-              href="/terms"
-              style={{
-                fontSize: 14,
-                color: "#1B3A5C",
-                display: "block",
-                marginBottom: 6,
-              }}
-            >
+            <Link href="/terms" style={{ fontSize: 14, color: "#1B3A5C", display: "block", marginBottom: 6 }}>
               Terms of engagement
             </Link>
-            <Link
-              href="/responsible-disclosure"
-              style={{
-                fontSize: 14,
-                color: "#1B3A5C",
-                display: "block",
-              }}
-            >
+            <Link href="/responsible-disclosure" style={{ fontSize: 14, color: "#1B3A5C", display: "block", marginBottom: 6 }}>
               Responsible disclosure
+            </Link>
+            <Link href="/#report" style={{ fontSize: 14, color: "#1B3A5C", display: "block" }}>
+              Report a company
             </Link>
           </div>
         </div>
