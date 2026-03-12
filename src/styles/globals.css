@@ -1,0 +1,218 @@
+:root {
+  --navy: #0B0C10;
+  --dark-navy: #1A1A2E;
+  --accent: #1B3A5C;
+  --highlight: #D4351C;
+  --highlight-shadow: #8B1E10;
+  --white: #FFFFFF;
+  --off-white: #F3F2F1;
+  --light-grey: #F8F8F8;
+  --mid-grey: #B1B4B6;
+  --dark-grey: #505A5F;
+  --text: #0B0C10;
+  --border: #B1B4B6;
+  --green: #00703C;
+  --green-shadow: #003618;
+  --section-border: #1D70B8;
+  --max-width: 960px;
+  --side-padding: 30px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background-color: var(--white);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--side-padding);
+  padding-right: var(--side-padding);
+}
+
+/* GOV.UK-style divider */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* Phase banner */
+.phase-tag {
+  display: inline-block;
+  background-color: var(--dark-navy);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+/* Section label */
+.section-label {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--dark-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* GOV.UK-style warning panel */
+.warning-panel {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.warning-icon {
+  min-width: 40px;
+  height: 40px;
+  background-color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* GOV.UK-style inset text */
+.inset-text {
+  border-left: 4px solid var(--border);
+  padding: 16px 24px;
+  background-color: var(--light-grey);
+}
+
+/* Button styles */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--highlight);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 3px 0 var(--highlight-shadow);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #b02e18;
+  text-decoration: none;
+}
+
+.btn-green {
+  display: inline-block;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 3px 0 var(--green-shadow);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-green:hover {
+  background-color: #005a30;
+}
+
+/* Form elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid var(--text);
+  font-family: Arial, sans-serif;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid var(--text);
+  font-family: Arial, sans-serif;
+  resize: vertical;
+}
+
+/* Summary card style */
+.summary-card {
+  border-top: 4px solid var(--accent);
+  background-color: var(--light-grey);
+}
+
+.summary-card-header {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.summary-card-tag {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dark-navy);
+  background-color: var(--white);
+  padding: 2px 10px;
+  border: 1px solid var(--border);
+}
+
+.summary-card-body {
+  padding: 16px 20px;
+}
+
+.summary-card-body p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--dark-grey);
+  line-height: 1.6;
+}
